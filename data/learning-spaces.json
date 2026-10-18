@@ -972,7 +972,7 @@
       "email": "",
       "sourceUrl": "https://baekjemuseum.seoul.go.kr/",
       "bookingUrl": "https://baekjemuseum.seoul.go.kr/",
-      "description": "한성백제 역사·고고학 상설전시와 교육. 올림픽공원 일대 역사 탐방과 연계할 수 있습니다. 학교 프로그램은 모집 기간·학년·정원을 확인하세요.",
+      "description": "한성백제 역사·고고학 상설전시와 교육. 올림픽공원 일대 역사 탐방과 연계할 수 있습니다. 학교 프로그램은 모집 기간·학년·정원을 확인하세요. 공식 홈페이지에 1층 상설전시실 공사(2026년 9~12월), 지하 기획전시실 공사(10월 19일~11월 19일)로 관람 제한이 공지되어 있습니다. 방문 전 운영 구역을 반드시 확인하세요.",
       "price": null,
       "status": "inquiry",
       "verifiedAt": "2026-10-18",
@@ -984,7 +984,8 @@
       "notes": "",
       "coordinateNote": "시설 개략 위치 · 집결지와 출입구는 공식 안내 확인",
       "sourceType": "curated",
-      "history": []
+      "history": [],
+      "statusEvidence": "2026-10-18 공식 홈페이지 공사 안내 확인 · 시설 전체 휴관을 뜻하지 않음"
     },
     {
       "id": "kofa-museum",

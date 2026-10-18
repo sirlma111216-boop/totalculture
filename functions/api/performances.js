@@ -4,7 +4,7 @@ export async function onRequestGet({request,env,waitUntil}){
  const params=new URL(request.url).searchParams;const page=Number(params.get('page')||1),window=Number(params.get('window')||0),genre=params.get('genre')||'AAAA';
  if(!Number.isInteger(page)||page<1||page>999||!Number.isInteger(window)||window<0||window>2||!['AAAA','GGGA'].includes(genre))return Response.json({message:'잘못된 조회 조건입니다.'},{status:400});
  const today=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Seoul'}),range=kopisWindow(today,window),origin=new URL(request.url).origin,cache=caches.default;
- const key=new Request(`${origin}/api/performances?v=2&day=${today}&window=${window}&genre=${genre}&page=${page}`);const hit=await cache.match(key);if(hit&&params.get('refresh')!=='1')return hit;
+ const key=new Request(`${origin}/api/performances?v=3&day=${today}&window=${window}&genre=${genre}&page=${page}`);const hit=await cache.match(key);if(hit&&params.get('refresh')!=='1')return hit;
  async function load(path,query={}){const u=new URL('https://www.kopis.or.kr/openApi/restful/'+path);Object.entries({...query,service:env.KOPIS_API_KEY}).forEach(([k,v])=>u.searchParams.set(k,v));for(let attempt=0;attempt<3;attempt++){try{const r=await fetch(u,{signal:AbortSignal.timeout(15000)});if(!r.ok)throw Error('KOPIS unavailable');return readKopis(await r.text());}catch(e){if(attempt===2)throw e;await new Promise(resolve=>setTimeout(resolve,500*(attempt+1)));}}}
 
  try{

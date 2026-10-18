@@ -1,3 +1,4 @@
+import {imageFields} from './images.mjs';
 import {XMLParser,XMLValidator} from 'fast-xml-parser';
 import {safeUrl} from './domain.mjs';
 const parser=new XMLParser({parseTagValue:false,trimValues:true,processEntities:true});
@@ -14,5 +15,5 @@ export function normalizeKopis(p,f,today){
  const sourceUrl='https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id='+encodeURIComponent(p.mt20id);
  const rel=p.relates?.relate;const links=(Array.isArray(rel)?rel:rel?[rel]:[]).map(r=>({label:t(r.relatenm),url:safeUrl(r.relateurl)})).filter(r=>r.url);
  const description=[`공연장: ${t(p.fcltynm)||t(f.fcltynm)}`,t(p.prfage)&&`관람 연령: ${t(p.prfage)}`,t(p.prfruntime)&&`공연 시간: ${t(p.prfruntime)}`,t(p.dtguidance)&&`회차 안내: ${t(p.dtguidance)}`,t(p.pcseguidance)&&`공시 가격: ${t(p.pcseguidance)}`,'단체 할인·학생 할인·잔여석은 예매처 또는 주최 측 확인이 필요합니다.'].filter(Boolean).join('\n');
- return {id:'kopis-'+p.mt20id,name:t(p.prfnm),category:'performance',lat,lng,address:t(f.adres),phone:t(f.telno),email:'',description,price:null,status:day(p.prfpdto)<today?'ended':'inquiry',sourceUrl,bookingUrl:links[0]?.url||sourceUrl,verifiedAt:today,tags:[t(p.genrenm),'KOPIS',...(p.daehakro==='Y'?['대학로']:[]),...(p.child==='Y'?['아동공연']:[])],notes:'',coordinateNote:'KOPIS 공연시설 제공 좌표 · 같은 시설의 공연은 묶어서 표시',sourceType:'kopis',startDate:day(p.prfpdfrom),endDate:day(p.prfpdto),rawStatus:t(p.prfstate),history:[],performance:{venue:t(p.fcltynm)||t(f.fcltynm),age:t(p.prfage),runtime:t(p.prfruntime),schedule:t(p.dtguidance),priceText:t(p.pcseguidance),links}};
+ return {...imageFields(p.poster,sourceUrl,'KOPIS 제공 공연 포스터'),id:'kopis-'+p.mt20id,name:t(p.prfnm),category:'performance',lat,lng,address:t(f.adres),phone:t(f.telno),email:'',description,price:null,status:day(p.prfpdto)<today?'ended':'inquiry',sourceUrl,bookingUrl:links[0]?.url||sourceUrl,verifiedAt:today,tags:[t(p.genrenm),'KOPIS',...(p.daehakro==='Y'?['대학로']:[]),...(p.child==='Y'?['아동공연']:[])],notes:'',coordinateNote:'KOPIS 공연시설 제공 좌표 · 같은 시설의 공연은 묶어서 표시',sourceType:'kopis',startDate:day(p.prfpdfrom),endDate:day(p.prfpdto),rawStatus:t(p.prfstate),history:[],performance:{venue:t(p.fcltynm)||t(f.fcltynm),age:t(p.prfage),runtime:t(p.prfruntime),schedule:t(p.dtguidance),priceText:t(p.pcseguidance),links}};
 }

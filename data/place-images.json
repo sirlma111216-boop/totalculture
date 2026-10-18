@@ -1,0 +1,117 @@
+{
+  "childrenpark": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/17.%20%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%8C%80%EA%B3%B5%EC%9B%90.jpg",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 어린이대공원"
+  },
+  "botanic": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/14.%20%EC%84%9C%EC%9A%B8%EC%8B%9D%EB%AC%BC%EC%9B%90.jpg",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 서울식물원"
+  },
+  "park-dream": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/9.%20%EB%B6%81%EC%84%9C%EC%9A%B8%EA%BF%88%EC%9D%98%EC%88%B2.jpg",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 북서울꿈의숲"
+  },
+  "park-seoulforest": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/13.%20%EC%84%9C%EC%9A%B8%EC%88%B2.png",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 서울숲"
+  },
+  "culture-tank": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/7.%20%EB%AC%B8%ED%99%94%EB%B9%84%EC%B6%95%EA%B8%B0%EC%A7%80.jpg",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 문화비축기지"
+  },
+  "park-worldcup": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/20.%20%EC%9B%94%EB%93%9C%EC%BB%B5%EA%B3%B5%EC%9B%90.png",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 월드컵공원"
+  },
+  "park-seonyudo": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/16.%20%EC%84%A0%EC%9C%A0%EB%8F%84%EA%B3%B5%EC%9B%90.jpg",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 선유도공원"
+  },
+  "park-boramae": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/8.%20%EB%B3%B4%EB%9D%BC%EB%A7%A4%EA%B3%B5%EC%9B%90.jpg",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 보라매공원"
+  },
+  "park-yongsan": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/19.%20%EC%9A%A9%EC%82%B0%EA%B0%80%EC%A1%B1%EA%B3%B5%EC%9B%90.png",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 용산가족공원"
+  },
+  "park-westlake": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/10.%20%EC%84%9C%EC%84%9C%EC%9A%B8%ED%98%B8%EC%88%98%EA%B3%B5%EC%9B%90.jpg",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 서서울호수공원"
+  },
+  "park-maeheon": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/6.%20%EB%A7%A4%ED%97%8C%EC%8B%9C%EB%AF%BC%EC%9D%98%EC%88%B2.jpg",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 매헌시민의숲"
+  },
+  "park-gildong": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/parks/3.%20%EA%B8%B8%EB%8F%99%EC%83%9D%ED%83%9C%EA%B3%B5%EC%9B%90.png",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+    "imageCredit": "기관 공식 안내 · 길동생태공원"
+  },
+  "hangang-play": {
+    "imageUrl": "https://hangang.seoul.go.kr/www/file/smEditorImage.do?fileDay=202601&fileName=20260119110444da2a06da14a34b45973d94586d55666c.jpg",
+    "imageSourceUrl": "https://hangang.seoul.go.kr/www/contents/798.do?mid=622",
+    "imageCredit": "기관 공식 안내 · 파크뷰 라운지"
+  },
+  "seoul-battleship": {
+    "imageUrl": "https://hangang.seoul.go.kr/www/file/smEditorImage.do?fileDay=202501&fileName=20250102220822d47c52414e8f43ea9ddcd43b617ac951.jpg",
+    "imageSourceUrl": "https://hangang.seoul.go.kr/www/contents/803.do?mid=527",
+    "imageCredit": "기관 공식 안내 · 서울함공원 전경. 2021-11-12 드론촬영"
+  },
+  "dreamart": {
+    "imageUrl": "https://parks.seoul.go.kr/resource/www/images/template/df08.jpg",
+    "imageSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604300016",
+    "imageCredit": "기관 공식 안내 · 꿈의숲 아트센터"
+  },
+  "ddp": {
+    "imageUrl": "https://culture.seoul.go.kr/cmmn/file/imageSrc.do?fileStreCours=981b376f1c18e5dca2052d06d46e7728e83b81bf456014a7d532a48fb85916a8&streFileNm=881433d626721247bd40dc348b9ba2f539140131461b1ec4fbc79f9f1d2d9b11",
+    "imageSourceUrl": "https://culture.seoul.go.kr/culture/culture/cultureSpace/view.do?facCode=101016&menuNo=200119",
+    "imageCredit": "기관 공식 안내 · DDP 전경이미지"
+  },
+  "mmca-seoul": {
+    "imageUrl": "https://www.mmca.go.kr/asset/images/main/img_place02_off.jpg",
+    "imageSourceUrl": "https://www.mmca.go.kr/",
+    "imageCredit": "기관 공식 안내 · 서울관 페이지로 이동"
+  },
+  "mmca-deoksu": {
+    "imageUrl": "https://www.mmca.go.kr/asset/images/main/img_place03_off.jpg",
+    "imageSourceUrl": "https://www.mmca.go.kr/",
+    "imageCredit": "기관 공식 안내 · 덕수궁관 페이지로 이동"
+  },
+  "kofa-museum": {
+    "imageUrl": "https://www.koreafilm.or.kr/static/pc/images/museum_main_big.png",
+    "imageSourceUrl": "https://www.koreafilm.or.kr/museum/main",
+    "imageCredit": "기관 공식 안내 · 한국영화박물관 상설전시실"
+  },
+  "baekje-museum": {
+    "imageUrl": "https://baekjemuseum.seoul.go.kr/upfile/popup/1718271080510_0_jpg",
+    "imageSourceUrl": "https://baekjemuseum.seoul.go.kr/",
+    "imageCredit": "기관 공식 안내 · 한성백제박물관 야간 전경"
+  },
+  "samsung-gangnam": {
+    "imageUrl": "https://images.samsung.com/kdp/plaza_site/923/7235a785-f2f3-4ee1-be39-7915e04d30b8.jpg?$1163_N_JPG$",
+    "imageSourceUrl": "https://org-sec-b2c.samsung.com/sec/samsungstore/storeDetail/C1L0/011UZ675/",
+    "imageCredit": "기관 공식 안내 · 매장전경"
+  },
+  "univ-khu-peace": {
+    "imageUrl": "https://hort.khu.ac.kr/cmmn/file/imageSrc.do?atchFileId=bdafb0a9ed15426d954f775e867b6e4c&fileSn=1",
+    "imageSourceUrl": "https://hort.khu.ac.kr/khugpp/user/main/view.do",
+    "imageCredit": "기관 공식 안내 · 평화의전당 이미지"
+  },
+  "hyehwa-exhibit": {
+    "imageUrl": "https://news.seoul.go.kr/culture/files/2019/11/5dc273fb60d9d3.06260084.jpg",
+    "imageSourceUrl": "https://news.seoul.go.kr/culture/archives/505170",
+    "imageCredit": "기관 공식 안내 · 꾸미기_전시안내선터 전경"
+  }
+}

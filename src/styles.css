@@ -21,3 +21,12 @@
 
 .topic-shortcuts{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:18px 0}.topic-shortcuts>span{font-weight:700;color:var(--green);margin-right:8px}.related-places{padding:18px;background:#f3f6f0;border-radius:14px;margin:18px 0}.related-places h3{margin-top:0}.related-places .button-row{flex-wrap:wrap}
 .related-places .button-row{max-height:320px;overflow-y:auto;align-items:stretch}.related-places .button-row button{text-align:left;white-space:normal}
+/* Each illustration occupies one square of a 3×2 atlas. Preserve that square
+   and crop the viewport, rather than stretching the atlas to the container. */
+.category-art{position:relative;overflow:hidden;container-type:size;background-image:none}
+.category-art::before{content:'';position:absolute;width:max(100cqw,100cqh);height:max(100cqw,100cqh);left:50%;top:50%;transform:translate(-50%,-50%);background-image:url('/assets/category-atlas.png');background-size:300% 200%}
+.art-0::before{background-position:0 0}.art-1::before{background-position:50% 0}.art-2::before{background-position:100% 0}.art-3::before{background-position:0 100%}.art-4::before{background-position:50% 100%}.art-5::before{background-position:100% 100%}
+.place-media{margin:0;width:100%;height:100%;min-width:0}.media-frame{height:100%;width:100%;overflow:hidden;background:#f1f2eb;border-radius:7px}.place-media img{display:block;width:100%;height:100%;object-fit:contain}
+.detail-media{height:auto;margin:0 auto 22px}.detail-media .media-frame{height:clamp(280px,50vh,460px);border-radius:12px}.detail-media.has-illustration{max-width:420px}.detail-media.has-illustration .media-frame{height:auto;aspect-ratio:1}.detail-media figcaption{padding:9px 3px;color:#75806e;font-size:10px;line-height:1.7}.detail-media figcaption a{text-decoration:underline}
+.comparison .place-media{height:150px;margin-bottom:15px}.itinerary-inner>.place-media{width:85px;height:100px;flex-shrink:0}
+.category-row{flex-wrap:wrap}
