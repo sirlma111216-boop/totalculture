@@ -1,3 +1,4 @@
+import {migrateParkCategories} from './parks.mjs';
 import learning from '../data/learning-spaces.json';
 import universities from '../data/universities.json';
 import cinemas from '../data/cinemas.json';
@@ -12,4 +13,4 @@ for(const p of curatedPlaces){
 }
 export const opportunities:Opportunity[]=research.opportunities.map(o=>({...o,description:o.summary,type:o.kind,validity:o.status}));
 
-export const initialPlaces:Place[]=[...curatedPlaces.filter(p=>!cinemas.places.some(c=>c.id===p.id)),...cinemas.places as Place[],...universities.places as Place[],...learning.places as Place[]];
+export const initialPlaces:Place[]=migrateParkCategories([...curatedPlaces.filter(p=>!cinemas.places.some(c=>c.id===p.id)),...cinemas.places as Place[],...universities.places as Place[],...learning.places as Place[]]);

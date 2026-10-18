@@ -1,7 +1,8 @@
+import {sportFacility} from './parks.mjs';
 import {safeUrl} from './domain.mjs';
 const text=v=>String(v??'').replace(/<[^>]*>/g,' ').replace(/&nbsp;/g,' ').trim();
 const day=v=>{const s=text(v);const m=s.match(/(\d{4})[-.](\d{2})[-.](\d{2})/);return m?`${m[1]}-${m[2]}-${m[3]}`:'';};
-const category=s=>/과학|천문|로봇|인공지능|이공계|통신기술|디스커버리랩|티움/.test(s)?'science':/체육|축구|테니스|야구|공원/.test(s)?'sports':/대관|회의실|공간/.test(s)?'space':/박물관|역사/.test(s)?'museum':/전시|미술/.test(s)?'exhibition':/교육|체험|강좌|과학/.test(s)?'experience':'performance';
+const category=s=>/과학|천문|로봇|인공지능|이공계|통신기술|디스커버리랩|티움/.test(s)?'science':sportFacility.test(s)?'sports':/공원|소풍|숲길|생태탐방/.test(s)?'park':/대관|회의실|공간/.test(s)?'space':/박물관|역사/.test(s)?'museum':/전시|미술/.test(s)?'exhibition':/교육|체험|강좌|과학/.test(s)?'experience':'performance';
 const coords=(lat,lng)=>Number.isFinite(lat)&&Number.isFinite(lng)&&lat>=33&&lat<=39&&lng>=124&&lng<=132;
 const hash=s=>{let n=2166136261;for(let i=0;i<s.length;i++){n^=s.charCodeAt(i);n=Math.imul(n,16777619);}return (n>>>0).toString(36);};
 export function normalizeCulture(r,today){

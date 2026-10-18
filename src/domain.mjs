@@ -1,9 +1,10 @@
 export const categories = [
+ { id:'park', label:'공원·소풍', short:'공원', color:'#438044', symbol:'♧', art:3 },
  { id:'science', label:'과학·기술', short:'과학', color:'#3577b5', symbol:'⚛', art:4 },
  { id:'performance', label:'공연·영화', short:'공연', color:'#c87559', symbol:'♪', art:0 },
  { id:'exhibition', label:'미술·전시', short:'전시', color:'#806caa', symbol:'◈', art:1 },
  { id:'museum', label:'박물관·역사', short:'박물관', color:'#bd923e', symbol:'▥', art:2 },
- { id:'sports', label:'체육·야외', short:'체육', color:'#568a6c', symbol:'◉', art:3 },
+ { id:'sports', label:'체육시설', short:'체육', color:'#568a6c', symbol:'◉', art:3 },
  { id:'experience', label:'교육·체험', short:'체험', color:'#4b91a1', symbol:'✦', art:4 },
  { id:'space', label:'공간·대관', short:'대관', color:'#727f91', symbol:'▦', art:5 }
 ];

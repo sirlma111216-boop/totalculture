@@ -20,3 +20,4 @@
 .kopis-strip{margin:12px 20px;padding:14px 18px;background:#f0f5ee;border:1px solid #dce6d7;border-radius:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:13px;color:#345141}.kopis-strip small{flex-basis:100%;color:#687469;font-size:11px}.performance-info{margin:24px 0;padding:20px;background:#f5f7f1;border-radius:14px}.performance-info small{display:block;margin-top:15px;font-size:11px;color:#687469}.detail-description{white-space:pre-line}
 
 .topic-shortcuts{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:18px 0}.topic-shortcuts>span{font-weight:700;color:var(--green);margin-right:8px}.related-places{padding:18px;background:#f3f6f0;border-radius:14px;margin:18px 0}.related-places h3{margin-top:0}.related-places .button-row{flex-wrap:wrap}
+.related-places .button-row{max-height:320px;overflow-y:auto;align-items:stretch}.related-places .button-row button{text-align:left;white-space:normal}
