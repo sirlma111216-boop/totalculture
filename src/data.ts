@@ -1,3 +1,4 @@
+import themeParks from '../data/theme-parks.json';
 import {migrateParkCategories} from './parks.mjs';
 import placeImages from '../data/place-images.json';
 import privateMuseums from '../data/private-museums.json';
@@ -15,4 +16,4 @@ for(const p of curatedPlaces){
 }
 export const opportunities:Opportunity[]=research.opportunities.map(o=>({...o,description:o.summary,type:o.kind,validity:o.status}));
 
-export const initialPlaces:Place[]=migrateParkCategories([...curatedPlaces.filter(p=>!cinemas.places.some(c=>c.id===p.id)),...cinemas.places as Place[],...universities.places as Place[],...learning.places as Place[],...privateMuseums.places as Place[]]).map((p:Place)=>({...p,...(placeImages as Record<string,{imageUrl:string;imageSourceUrl:string;imageCredit:string}>)[p.id]}));
+export const initialPlaces:Place[]=migrateParkCategories([...curatedPlaces.filter(p=>!cinemas.places.some(c=>c.id===p.id)),...cinemas.places as Place[],...universities.places as Place[],...learning.places as Place[],...privateMuseums.places as Place[],...themeParks.places as Place[]]).map((p:Place)=>({...p,...(placeImages as Record<string,{imageUrl:string;imageSourceUrl:string;imageCredit:string}>)[p.id]}));

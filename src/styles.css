@@ -30,3 +30,10 @@
 .detail-media{height:auto;margin:0 auto 22px}.detail-media .media-frame{height:clamp(280px,50vh,460px);border-radius:12px}.detail-media.has-illustration{max-width:420px}.detail-media.has-illustration .media-frame{height:auto;aspect-ratio:1}.detail-media figcaption{padding:9px 3px;color:#75806e;font-size:10px;line-height:1.7}.detail-media figcaption a{text-decoration:underline}
 .comparison .place-media{height:150px;margin-bottom:15px}.itinerary-inner>.place-media{width:85px;height:100px;flex-shrink:0}
 .category-row{flex-wrap:wrap}
+/* School-to-venue directions stay separate from straight-line map distances. */
+.transport-guide{margin:18px 0;border:1px solid #dbe4d5;border-radius:14px;background:#f5f8f1;overflow:hidden}
+.transport-toggle{width:100%;justify-content:flex-start!important;border:0!important;background:transparent!important;padding:16px!important;font-weight:700}
+.transport-toggle span{margin-left:auto;font-size:12px;font-weight:400}
+.transport-content{padding:0 18px 18px}.transport-content h3{font-size:18px;color:#254d3e;margin:6px 0 14px}
+.transport-content p{font-size:14px;line-height:1.8}.transport-content .micro{font-size:12px;color:#697361}
+.transport-endpoints{display:flex;align-items:center;gap:18px;padding:18px 0}.transport-endpoints>div{flex:1;min-width:0}.transport-endpoints small{display:block;color:#697361;font-size:12px;margin-bottom:6px}.transport-endpoints strong{display:block;overflow-wrap:anywhere;font-size:15px}.transport-content .chip[aria-pressed=true]{background:#254d3e;color:#fff;border-color:#254d3e}

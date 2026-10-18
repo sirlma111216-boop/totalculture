@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-10-18",
+  "places": [
+    {
+      "id": "theme-lotteworld",
+      "name": "롯데월드 어드벤처 · 잠실",
+      "lat": 37.5111,
+      "lng": 127.0982,
+      "address": "서울 송파구 올림픽로 240",
+      "phone": "1661-2000",
+      "sourceUrl": "https://english.visitseoul.net/entertainment/Lotte-World-Adventure/ENP002192",
+      "bookingUrl": "https://adventure.lotteworld.com/",
+      "description": "실내 어드벤처와 야외 매직아일랜드를 함께 이용하는 놀이공원. 학교 단체 방문일·학년·인원·인솔 교사 수를 알려 학생 단체 상담으로 연결을 요청하세요. 단체 할인액과 식사·민속박물관 포함 여부는 상품별로 확인해야 합니다. 일반 온라인 할인 가격을 학교 단체 가격으로 적용하지 않았습니다. 대표 고객센터 번호입니다.",
+      "tags": [
+        "놀이공원",
+        "소풍",
+        "기업 체험",
+        "롯데",
+        "실내"
+      ],
+      "category": "experience",
+      "email": "",
+      "price": null,
+      "status": "inquiry",
+      "verifiedAt": "2026-10-18",
+      "notes": "",
+      "coordinateNote": "시설 개략 위치 · 단체 입구·버스 승하차장 별도 확인",
+      "sourceType": "curated",
+      "history": []
+    },
+    {
+      "id": "theme-everland",
+      "name": "에버랜드 · 학생단체 체험학습",
+      "lat": 37.2943,
+      "lng": 127.2024,
+      "address": "경기 용인시 처인구 포곡읍 에버랜드로 199",
+      "phone": "031-320-8600",
+      "sourceUrl": "https://grp.everland.com/everedu/information/price.html",
+      "bookingUrl": "https://grp.everland.com/everedu/why/",
+      "description": "놀이시설·동물·정원을 연계하는 용인의 테마파크. 공식 학생단체 요금 안내는 학생 10명 이상 예약 단체를 대상으로 합니다. 날짜·학년에 따른 견적과 교과 연계 체험, 식사쿠폰, 답사 및 인솔 교사 지원 조건은 학생단체 담당자에게 문의하세요. 일반 학생단체 상품이며 교육청 협약 할인으로 확인된 내용은 아닙니다.",
+      "tags": [
+        "놀이공원",
+        "소풍",
+        "기업 체험",
+        "삼성",
+        "생태환경",
+        "서울 밖"
+      ],
+      "category": "experience",
+      "email": "",
+      "price": null,
+      "status": "inquiry",
+      "verifiedAt": "2026-10-18",
+      "notes": "",
+      "coordinateNote": "시설 개략 위치 · 단체 입구·버스 승하차장 별도 확인",
+      "sourceType": "curated",
+      "history": []
+    },
+    {
+      "id": "theme-seoulland",
+      "name": "서울랜드 · 학생단체",
+      "lat": 37.4343,
+      "lng": 127.0197,
+      "address": "경기 과천시 광명로 181",
+      "phone": "02-509-6281",
+      "sourceUrl": "https://seoulland.co.kr/?p=38",
+      "bookingUrl": "https://seoulland.co.kr/?p=25_2",
+      "description": "과천의 놀이공원으로 서울대공원 동물원과는 별도 입장·예약 시설입니다. 공식 요금 안내상 20명 이상 단체할인, 학생단체 문의는 02-509-6281~4입니다. 온라인 신청서에는 학생 인원의 10% 한도 인솔자 무료 혜택을 안내하며 최종 적용 조건을 예약 시 확인하세요. 지하철 4호선 대공원역 2번 출구 이후 단체 이동 구간을 미리 확인하세요.",
+      "tags": [
+        "놀이공원",
+        "소풍",
+        "학생단체",
+        "서울 밖"
+      ],
+      "category": "experience",
+      "email": "",
+      "price": null,
+      "status": "inquiry",
+      "verifiedAt": "2026-10-18",
+      "notes": "",
+      "coordinateNote": "시설 개략 위치 · 단체 입구·버스 승하차장 별도 확인",
+      "sourceType": "curated",
+      "history": []
+    }
+  ]
+}
