@@ -382,6 +382,26 @@
       "status": "inquiry",
       "capacity": null,
       "partnership": null
+    },
+    {
+      "id": "lotte-cheongnyangni",
+      "name": "롯데시네마 청량리",
+      "category": "cinema",
+      "lat": 37.5807,
+      "lng": 127.0483,
+      "address": "서울 동대문구 왕산로 214 (청량리역사)",
+      "phone": "010-2189-3559",
+      "email": null,
+      "sourceUrl": "https://www.lottecinema.co.kr/NLCHS/Ticketing",
+      "bookingUrl": "https://www.lottecinema.co.kr/NLCHS/Ticketing",
+      "notes": "서울시교육청 학생 단체 영화관람 할인 · 2026년 연중\n대상: 서울시교육청 유·초·중·고 학생, 10명 이상 단체, 2D 영화.\n영화: 일반 시간대 8,000원 / 조조 7,000원. 조조 시간은 영화관별 상이. 학생 10명당 인솔교사 1명 무료.\n매점(사전 주문): 싱글콤보 5,500원(팝콘 M+어린이 음료), 스낵콤보 7,500원(스낵+어린이 음료 M). 팝콘 맛 변경 시 추가금. 스낵 종류·재고는 극장에 확인.\n콤보 할인가는 변경·재공지 예정이며, 학생 개별 이용 금액은 다릅니다. 예약 시 현재 가격과 적용 조건을 확인하세요.\n청량리 단체관람 문의: 010-2189-3559 (제공된 안내문 기재).\n출처: 사용자가 제공한 서울특별시교육청 「2026년 학생 단체 영화관람 할인 안내」 및 롯데시네마 첨부 안내문(2026-10-18 확인). 할인 공문의 공개 원문 URL·후속 변경 공지는 별도 확인하지 못했습니다.\n참고: 같은 공문에 CGV의 해당 학생 단체 할인 지원은 2026-01-01부터 종료되었다고 명시되어 있습니다. CGV의 일반 단체·대관 가능 여부와는 별개입니다.",
+      "price": null,
+      "coordinateAccuracy": "approximate",
+      "verifiedAt": "2026-10-18",
+      "verificationScope": "제공된 교육청 공문과 공식 예매 사이트의 지점 목록 확인. 할인 변경 여부·예약 가능 여부는 문의 필요.",
+      "status": "inquiry",
+      "capacity": null,
+      "partnership": "서울시교육청 2026 학생 단체 할인 안내"
     }
   ],
   "opportunities": [
@@ -412,6 +432,16 @@
       "status": "current-validity-unverified",
       "summary": "2016년 업무협약 공식 기록에서 취약계층 학생·학부모 문화예술체험 협력을 확인. 2026년 적용 여부·신청 창구·지원액은 확인되지 않아 현재 혜택으로 표시하지 않음.",
       "sourceUrl": "https://seouleducation.sen.go.kr/fileDownload.do?folder=promise_data&srvFile=1488794955036.pdf&usrFile=1488794955036.pdf",
+      "verifiedAt": "2026-10-18",
+      "partnership": true
+    },
+    {
+      "id": "lotte-sen-2026",
+      "title": "2026 롯데시네마 학생 단체 할인 · 청량리",
+      "kind": "school-group-benefit",
+      "status": "confirm-before-booking",
+      "summary": "서울시교육청 학생 단체 영화관람 할인 · 2026년 연중\n대상: 서울시교육청 유·초·중·고 학생, 10명 이상 단체, 2D 영화.\n영화: 일반 시간대 8,000원 / 조조 7,000원. 조조 시간은 영화관별 상이. 학생 10명당 인솔교사 1명 무료.\n매점(사전 주문): 싱글콤보 5,500원(팝콘 M+어린이 음료), 스낵콤보 7,500원(스낵+어린이 음료 M). 팝콘 맛 변경 시 추가금. 스낵 종류·재고는 극장에 확인.\n콤보 할인가는 변경·재공지 예정이며, 학생 개별 이용 금액은 다릅니다. 예약 시 현재 가격과 적용 조건을 확인하세요.\n청량리 단체관람 문의: 010-2189-3559 (제공된 안내문 기재).\n출처: 사용자가 제공한 서울특별시교육청 「2026년 학생 단체 영화관람 할인 안내」 및 롯데시네마 첨부 안내문(2026-10-18 확인). 할인 공문의 공개 원문 URL·후속 변경 공지는 별도 확인하지 못했습니다.\n참고: 같은 공문에 CGV의 해당 학생 단체 할인 지원은 2026-01-01부터 종료되었다고 명시되어 있습니다. CGV의 일반 단체·대관 가능 여부와는 별개입니다.",
+      "sourceUrl": "https://www.lottecinema.co.kr/NLCHS/Ticketing",
       "verifiedAt": "2026-10-18",
       "partnership": true
     }
