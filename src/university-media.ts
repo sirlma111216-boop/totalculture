@@ -11,7 +11,7 @@ export const universityMedia:Record<string,{name:string;url:string;source:string
   },
   "yonsei": {
     "name": "연세대학교",
-    "url": "https://www.yonsei.ac.kr/Web-home/_UI/images/img_symbol.png",
+    "url": "https://www.yonsei.ac.kr/sites/sc/images/common/img-header-logo-color.png",
     "source": "https://www.yonsei.ac.kr/"
   },
   "khu": {
