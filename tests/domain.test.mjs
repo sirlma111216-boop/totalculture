@@ -1,9 +1,10 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {distance,filterPlaces,normalizeImport,computeBudget,safeUrl} from '../src/domain.mjs';
+import {distance,filterPlaces,normalizeImport,computeBudget,safeUrl,mergeCatalog} from '../src/domain.mjs';
 import {normalizeCulture,normalizeReservation} from '../src/catalog.mjs';
 import fs from 'node:fs';
 const place={id:'a',name:'테스트 시설',category:'museum',lat:37.575,lng:126.99,price:null,status:'inquiry'};
+test('partial refresh updates fetched records without deleting others or personal edits',()=>{const old=[{...place,sourceType:'seoul'},{...place,id:'b',sourceType:'seoul'},{...place,id:'c',sourceType:'seoul',history:[{text:'직접 확인'}]}];const fresh=[{...place,sourceType:'seoul',name:'갱신'},{...place,id:'c',sourceType:'seoul',name:'원자료'}];const r=mergeCatalog(old,fresh,true);assert.equal(r.length,3);assert.equal(r[0].name,'갱신');assert.equal(r[2].name,place.name);assert.equal(mergeCatalog(old,fresh,false).length,2);});
 test('distance uses kilometres and radius filter excludes farther points',()=>{assert.equal(distance(place,place),0);const d=distance(place,{lat:37.585,lng:126.99});assert.ok(d>1.1&&d<1.12);assert.equal(filterPlaces([place,{...place,id:'b',lat:37.7}],{school:place,radius:1}).length,1);});
 test('combined filters preserve unknown date candidates, exclude past known dates and apply categories/saved',()=>{const rows=[place,{...place,id:'past',endDate:'2025-12-01'},{...place,id:'other',category:'sports'}];const r=filterPlaces(rows,{school:place,radius:5,date:'2026-10-18',cats:['museum'],savedOnly:true,saved:['a','past']});assert.deepEqual(r.map(p=>p.id),['a']);});
 test('unknown costs are not reported as free',()=>{assert.equal(filterPlaces([place],{school:place,radius:5,free:true}).length,0);assert.deepEqual(computeBudget([place,{...place,price:2000}],30,100000,8000),{total:400000,perPerson:13333.333333333334,unknown:1});});

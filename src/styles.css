@@ -10,3 +10,4 @@
 @media(max-width:1200px){.nav-item{font-size:11px}.card-copy h3{font-size:12px}.card-copy p{font-size:9px}.chip{font-size:10px}.hero p{font-size:11px}.map-legend{font-size:9px}}
 @media(max-width:900px){.hero h1{font-size:26px}.hero p{font-size:10px}.tag{font-size:9px}.status{font-size:9px}.map-locate{font-size:9px}}
 @media(max-width:650px){.hero{height:200px}.hero h1{font-size:25px}.hero p{font-size:10px}.card-copy h3{font-size:14px}.card-copy p{font-size:10px}.map-legend{font-size:9px}.chip{font-size:10px}.nav-item{font-size:12px}}
+.load-more{width:100%;margin:10px 0;grid-column:1/-1}

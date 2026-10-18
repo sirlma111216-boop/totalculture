@@ -21,3 +21,5 @@ export function normalizeImport(data){
  return {...data,places:clean,saved:Array.isArray(data.saved)?data.saved.filter(x=>typeof x==='string'):[],plan:Array.isArray(data.plan)?data.plan.filter(x=>typeof x==='string'):[]};
 }
 export function computeBudget(stops,people,transport,meal){ const known=stops.reduce((sum,p)=>sum+(p.price??0),0);return {total:known*people+transport+meal*people,perPerson:known+meal+(people?transport/people:0),unknown:stops.filter(p=>p.price===null).length}; }
+/** Preserve personal edits; partial refreshes must not delete records from a failed/truncated source. */
+export function mergeCatalog(existing,incoming,partial=false){const protectedIds=new Set(existing.filter(p=>p.sourceType!=='seoul'||p.history?.length).map(p=>p.id));const merged=new Map(existing.filter(p=>partial||protectedIds.has(p.id)).map(p=>[p.id,p]));for(const p of incoming){if(!protectedIds.has(p.id))merged.set(p.id,p);}return [...merged.values()];}
