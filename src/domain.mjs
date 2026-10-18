@@ -22,7 +22,7 @@ export function normalizeImport(data){
 }
 export function computeBudget(stops,people,transport,meal){ const known=stops.reduce((sum,p)=>sum+(p.price??0),0);return {total:known*people+transport+meal*people,perPerson:known+meal+(people?transport/people:0),unknown:stops.filter(p=>p.price===null).length}; }
 /** Preserve personal edits; partial refreshes must not delete records from a failed/truncated source. */
-export function mergeCatalog(existing,incoming,partial=false,source='seoul'){const protectedIds=new Set(existing.filter(p=>p.sourceType!==source||p.history?.length).map(p=>p.id));const merged=new Map(existing.filter(p=>partial||protectedIds.has(p.id)).map(p=>[p.id,p]));for(const p of incoming){if(!protectedIds.has(p.id))merged.set(p.id,p);}return [...merged.values()];}
+export function mergeCatalog(existing,incoming,partial=false,source='seoul'){const protectedIds=new Set(existing.filter(p=>!(source==='seoul-culture'?p.sourceType==='seoul'&&p.id.startsWith('seoul-c-'):source==='seoul-reservation'?p.sourceType==='seoul'&&p.id.startsWith('seoul-r-'):p.sourceType===source)||p.history?.length).map(p=>p.id));const merged=new Map(existing.filter(p=>partial||protectedIds.has(p.id)).map(p=>[p.id,p]));for(const p of incoming){if(!protectedIds.has(p.id))merged.set(p.id,p);}return [...merged.values()];}
 export const districts=['강남구','강동구','강북구','강서구','관악구','광진구','구로구','금천구','노원구','도봉구','동대문구','동작구','마포구','서대문구','서초구','성동구','성북구','송파구','양천구','영등포구','용산구','은평구','종로구','중구','중랑구'];
 export function placeDistrict(p){return [p.district,...(p.tags||[]),...(String(p.address||'').split(/[\s,>]+/))].find(v=>districts.includes(v))||'';}
 /** @param {any[]} places @param {any} options */
