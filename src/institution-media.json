@@ -113,5 +113,15 @@
     "name": "호암미술관",
     "url": "https://www.leeumhoam.org/img/index/hoam-index-logo.svg",
     "source": "https://www.leeumhoam.org/"
+  },
+  "www.gkedc.go.kr": {
+    "name": "글로벌지식협력단지",
+    "url": "https://www.gkedc.go.kr/res/img/logo_color.png",
+    "source": "https://www.gkedc.go.kr/"
+  },
+  "gkedc.go.kr": {
+    "name": "글로벌지식협력단지",
+    "url": "https://www.gkedc.go.kr/res/img/logo_color.png",
+    "source": "https://www.gkedc.go.kr/"
   }
 }
