@@ -1,0 +1,102 @@
+{
+  "sema.seoul.go.kr": {
+    "name": "서울시립미술관",
+    "url": "https://sema.seoul.go.kr/resources/assets/svg/o_symbol_b.svg",
+    "source": "https://sema.seoul.go.kr"
+  },
+  "science.seoul.go.kr": {
+    "name": "서울시립과학관",
+    "url": "https://science.seoul.go.kr/resources/renewal/asset/img/common/logo.png",
+    "source": "https://science.seoul.go.kr"
+  },
+  "www.museum.go.kr": {
+    "name": "국립중앙박물관",
+    "url": "https://www.museum.go.kr/ux/content/images/common/header_logo.png",
+    "source": "https://www.museum.go.kr"
+  },
+  "www.mmca.go.kr": {
+    "name": "국립현대미술관",
+    "url": "https://www.mmca.go.kr/asset/images/common/bg_logo_full.svg",
+    "source": "https://www.mmca.go.kr"
+  },
+  "sejongpac.or.kr": {
+    "name": "세종문화회관",
+    "url": "https://www.sejongpac.or.kr/static/portal/img/main/logo.gif",
+    "source": "https://sejongpac.or.kr"
+  },
+  "www.sisul.or.kr": {
+    "name": "서울시설공단",
+    "url": "https://www.sisul.or.kr/open_content/main/images/logo.gif",
+    "source": "https://www.sisul.or.kr"
+  },
+  "botanicpark.seoul.go.kr": {
+    "name": "서울식물원",
+    "url": "https://botanicpark.seoul.go.kr/front/img/img_h1_logo.png",
+    "source": "https://botanicpark.seoul.go.kr"
+  },
+  "www.sejongpac.or.kr": {
+    "name": "세종문화회관",
+    "url": "https://www.sejongpac.or.kr/static/portal/img/main/logo.gif",
+    "source": "https://www.sejongpac.or.kr"
+  },
+  "hangang.seoul.go.kr": {
+    "name": "미래한강본부",
+    "url": "https://hangang.seoul.go.kr/resources/zeroCMS/site/www/images/h_logo.png",
+    "source": "https://hangang.seoul.go.kr"
+  },
+  "www.lgdlab.or.kr": {
+    "name": "LG 디스커버리랩",
+    "url": "https://www.lgdlab.or.kr/images/logo/logo-basic-5529d824010f0b066fe16258c63198c3.png",
+    "source": "https://www.lgdlab.or.kr"
+  },
+  "namu.sdm.go.kr": {
+    "name": "서대문자연사박물관",
+    "url": "https://namu.sdm.go.kr/design/theme/namu/images/common/logo.png",
+    "source": "https://namu.sdm.go.kr"
+  },
+  "www.aviation.or.kr": {
+    "name": "국립항공박물관",
+    "url": "https://www.aviation.or.kr/contents/home/images/intro-logo.png",
+    "source": "https://www.aviation.or.kr"
+  },
+  "seouledc.or.kr": {
+    "name": "서울에너지드림센터",
+    "url": "https://seouledc.or.kr/uploads/logo/logo_1789091766.png",
+    "source": "https://seouledc.or.kr"
+  },
+  "baekjemuseum.seoul.go.kr": {
+    "name": "한성백제박물관",
+    "url": "https://baekjemuseum.seoul.go.kr/new3/images/contents/logohansung_main_logo.png",
+    "source": "https://baekjemuseum.seoul.go.kr"
+  },
+  "www.lottemuseum.com": {
+    "name": "롯데뮤지엄",
+    "url": "https://www.lottemuseum.com/Content/ko/images/2024/footer_logo_black.png",
+    "source": "https://www.lottemuseum.com"
+  },
+  "smtownandstore.com": {
+    "name": "SMTOWN & STORE",
+    "url": "https://smtownandstore.com/morenvyimg/SMBM_GNB_Logo_Default.svg",
+    "source": "https://smtownandstore.com"
+  },
+  "www.gogung.go.kr": {
+    "name": "국립고궁박물관",
+    "url": "https://www.gogung.go.kr/resources/gogung/images/common/main_logo.png",
+    "source": "https://www.gogung.go.kr"
+  },
+  "m.much.go.kr": {
+    "name": "대한민국역사박물관",
+    "url": "https://m.much.go.kr/resource/templete/manpa/img/layout/much-logo.png",
+    "source": "https://m.much.go.kr"
+  },
+  "www.hangeul.go.kr": {
+    "name": "국립한글박물관",
+    "url": "https://www.hangeul.go.kr/v1/images/common/logo.svg",
+    "source": "https://www.hangeul.go.kr"
+  },
+  "seoulland.co.kr": {
+    "name": "서울랜드",
+    "url": "https://seoulland.co.kr/inc/images/main/img_logo_header2.svg",
+    "source": "https://seoulland.co.kr"
+  }
+}
