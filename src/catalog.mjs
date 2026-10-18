@@ -1,0 +1,13 @@
+import {safeUrl} from './domain.mjs';
+const text=v=>String(v??'').replace(/<[^>]*>/g,' ').replace(/&nbsp;/g,' ').trim();
+const day=v=>{const s=text(v);const m=s.match(/(\d{4})[-.](\d{2})[-.](\d{2})/);return m?`${m[1]}-${m[2]}-${m[3]}`:'';};
+const category=s=>/체육|축구|테니스|야구|공원/.test(s)?'sports':/대관|회의실|공간/.test(s)?'space':/박물관|역사/.test(s)?'museum':/전시|미술/.test(s)?'exhibition':/교육|체험|강좌|과학/.test(s)?'experience':'performance';
+const coords=(lat,lng)=>Number.isFinite(lat)&&Number.isFinite(lng)&&lat>=33&&lat<=39&&lng>=124&&lng<=132;
+const hash=s=>{let n=2166136261;for(let i=0;i<s.length;i++){n^=s.charCodeAt(i);n=Math.imul(n,16777619);}return (n>>>0).toString(36);};
+export function normalizeCulture(r,today){
+ // Validate both historical coordinate orders; current dataset uses LAT latitude / LOT longitude.
+ let lat=Number(r.LOT),lng=Number(r.LAT);if(!coords(lat,lng)&&coords(Number(r.LAT),Number(r.LOT))){lat=Number(r.LAT);lng=Number(r.LOT);}const endDate=day(r.END_DATE);if(!coords(lat,lng)||(endDate&&endDate<today))return null;
+ const name=text(r.TITLE);if(!name)return null;return {id:'seoul-c-'+hash(name+text(r.STRTDATE)+text(r.PLACE)+text(r.HMPG_ADDR)),name,category:category(text(r.CODENAME)),lat,lng,address:text(r.PLACE),phone:text(r.INQUIRY),email:'',description:[text(r.PROGRAM),text(r.USE_TRGT),text(r.USE_FEE)].filter(Boolean).join(' · ')||'서울문화포털 등록 행사. 회차와 단체 이용 조건은 공식 안내에서 확인하세요.',price:/^무료$/.test(text(r.IS_FREE))?0:null,status:'inquiry',sourceUrl:safeUrl(r.HMPG_ADDR),bookingUrl:safeUrl(r.ORG_LINK)||safeUrl(r.HMPG_ADDR),verifiedAt:today,tags:[text(r.CODENAME),text(r.GUNAME)].filter(Boolean),notes:'',coordinateNote:'서울시 원자료 제공 좌표',sourceType:'seoul',startDate:day(r.STRTDATE),endDate,history:[]};
+}
+export function normalizeReservation(r,today){const lat=Number(r.Y),lng=Number(r.X);const endDate=day(r.SVCOPNENDDT);if(!coords(lat,lng)||(endDate&&endDate<today)||/진료/.test(text(r.MAXCLASSNM)))return null;const name=text(r.SVCNM);if(!name)return null;const raw=text(r.SVCSTATNM);return {id:'seoul-r-'+text(r.SVCID),name,category:category(text(r.MAXCLASSNM)+' '+text(r.MINCLASSNM)),lat,lng,address:text(r.PLACENM),phone:text(r.TELNO),email:'',description:[text(r.USETGTINFO),text(r.PAYATNM),text(r.RCPTBGNDT)?'접수 '+text(r.RCPTBGNDT)+' ~ '+text(r.RCPTENDDT):''].filter(Boolean).join(' · '),price:text(r.PAYATNM)==='무료'?0:null,status:/종료|마감/.test(raw)?'ended':'inquiry',rawStatus:raw,sourceUrl:safeUrl(r.SVCURL),bookingUrl:safeUrl(r.SVCURL),verifiedAt:today,tags:[text(r.MAXCLASSNM),text(r.MINCLASSNM),text(r.AREANM)].filter(Boolean),notes:'',coordinateNote:'서울시 원자료 제공 좌표',sourceType:'seoul',startDate:day(r.SVCOPNBGNDT),endDate,history:[]};}
+
