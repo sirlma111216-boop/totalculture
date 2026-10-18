@@ -15,7 +15,7 @@ export const sportFacility = /체육|축구|풋살|테니스|야구|농구|배�
 export function parkRelated(park,places){
  const compact=s=>String(s||'').replace(/\s/g,'');
  const names=park.category==='park'?(parkNames[park.id]||[park.name]):[];
- return places.filter(p=>p.id!==park.id&&(park.relatedIds?.includes(p.id)||p.relatedIds?.includes(park.id)||names.some(n=>compact(p.name+' '+p.address+' '+(p.performance?.venue||'')).includes(compact(n)))))
+ return places.filter(p=>p.status!=='expired'&&p.id!==park.id&&(park.relatedIds?.includes(p.id)||p.relatedIds?.includes(park.id)||names.some(n=>compact(p.name+' '+p.address+' '+(p.performance?.venue||'')).includes(compact(n)))))
  .map(p=>({...p,relationKind:park.relatedIds?.includes(p.id)||p.relatedIds?.includes(park.id)?'직접 연결':'장소명 일치'}));
 }
 export function migrateParkCategories(places){return places.map(p=>{

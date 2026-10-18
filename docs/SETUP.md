@@ -24,6 +24,10 @@ API: `culturalEventInfo` (OA-15486), `tvYeyakCOllect` (OA-20497). 공식 공개 
 
 Cloudflare Git integration에 `sirlma111216-boop/totalculture`가 연결됩니다. `main` push → `npm run build` → `dist`와 `functions/` 배포. Pages Functions는 Cloudflare가 별도로 컴파일합니다.
 
-## 백업
+## 공유누리 체육시설 (승인 대기)
+
+`https://www.eshare.go.kr/OpenApi/Info/detail.do?svcNo=14`에서 공유자원 체육시설 목록 사용 승인을 신청합니다. 승인 후 Production Secret `ESHARE_API_KEY`를 등록하고 재배포합니다. 앱의 데이터와 설정에서 공유누리 체육시설 연결·업데이트를 누릅니다. 서울(ctpvCd=11) 목록을 페이지당 100건씩 읽고, 한도 보호를 위해 서버에서 1시간 캐시합니다. 오류·좌표 누락·페이지 제한은 기존 자료를 보존합니다. 인증키 승인 전에는 실제 응답 수신 검증을 완료한 것으로 보지 않습니다. 목록 API의 명세에는 전화번호·잔여석·학교 단체 요금이 없으므로 이를 추정하지 않습니다.
+
+## 백업 파일
 
 정보 관리 또는 데이터와 설정 → 전체 백업. JSON 파일에는 장소·보관함·일정 ID와 학교 기준점이 포함됩니다. 현재 브라우저의 개인 정보이므로 본인이 보관하세요. 백업 병합은 ID가 같은 시설을 가져온 내용으로 갱신하고 기존의 다른 시설은 유지합니다.

@@ -23,3 +23,7 @@ test('park category works in backups and map filtering',()=>{
  assert.equal(normalizeImport({version:1,places:[p]}).places[0].category,'park');
  assert.equal(filterPlaces([p,{...p,id:'gym',category:'sports'}],{school:p,radius:10,cats:['park']}).length,1);
 });
+test('expired related programs are hidden even when explicitly linked',()=>{
+ const p={id:'park',name:'공원',category:'park',relatedIds:['past','future']};
+ assert.deepEqual(parkRelated(p,[{id:'past',name:'지난 체험',status:'expired'},{id:'future',name:'현재 체험',status:'inquiry'}]).map(p=>p.id),['future']);
+});
