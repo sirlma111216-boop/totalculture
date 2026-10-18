@@ -18,5 +18,5 @@ export async function onRequestGet({request,env,waitUntil}){
  }catch{failures++;}}));}
  const result=Response.json({configured:true,places,range,page,genre,hasMore:rows.length===10,read:rows.length,failures,unmapped,partial:failures>0||unmapped>0,updatedAt:new Date().toISOString()},{headers:{'Cache-Control':'public, max-age=3600'}});
  if(!failures)waitUntil(cache.put(key,result.clone()));return result;
- }catch{return Response.json({configured:true,message:'KOPIS 조회에 실패했습니다. 인증키 승인 또는 서비스 상태를 확인해 주세요.'},{status:502});}
+ }catch(error){const reason=['Invalid XML','KOPIS response error','KOPIS unavailable'].includes(error?.message)?error.message:'upstream timeout or network';return Response.json({configured:true,reason,message:'KOPIS 조회에 실패했습니다. 인증키 승인 또는 서비스 상태를 확인해 주세요.'},{status:502});}
 }
