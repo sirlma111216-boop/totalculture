@@ -1,0 +1,195 @@
+{
+  "checkedAt": "2026-10-18",
+  "scope": "서울 주요 궁궐·왕릉, 국가 박물관 4곳, 서울역사박물관 공식 분관 목록, 서울시립미술관 관람공간 목록 대조. 서울 전체 시설에 대한 완전성 보장은 아님.",
+  "newIds": [
+    "heritage-gyeongbok",
+    "heritage-changdeok",
+    "heritage-changgyeong",
+    "heritage-deoksu",
+    "heritage-jongmyo",
+    "heritage-taereung",
+    "heritage-jeongneung",
+    "heritage-uireung",
+    "heritage-seonjeong",
+    "heritage-heonin",
+    "heritage-yeonsan",
+    "heritage-yeonghwi",
+    "museum-gogung",
+    "museum-much",
+    "museum-folk",
+    "annex-gyeonghui",
+    "annex-gyeonggyo",
+    "annex-baekin",
+    "annex-dongdaemun",
+    "annex-donuimun",
+    "annex-gongpyeong",
+    "annex-gungisi",
+    "annex-dilkusha",
+    "annex-urisori",
+    "annex-insa",
+    "sema-west",
+    "sema-archive",
+    "sema-photo",
+    "sema-south",
+    "sema-nanji",
+    "sema-paik",
+    "museum-hangeul"
+  ],
+  "historyBranches": {
+    "source": "https://museum.seoul.go.kr/www/intro/introOrg/organization.do?deptCd=6113962",
+    "alreadyRegistered": [
+      "history",
+      "cheonggye",
+      "citywall",
+      "life"
+    ],
+    "newIds": [
+      "annex-gyeonghui",
+      "annex-gyeonggyo",
+      "annex-baekin",
+      "annex-dongdaemun",
+      "annex-donuimun",
+      "annex-gongpyeong",
+      "annex-gungisi",
+      "annex-dilkusha",
+      "annex-urisori",
+      "annex-insa"
+    ]
+  },
+  "limits": [
+    "기관별 회차 잔여석은 확인하지 않음",
+    "명시되지 않은 교사 감면·단체 인원 기준은 추정하지 않고 문의로 표시",
+    "폐관·휴관 종료 예정일은 재개관 확정일이 아님",
+    "위도·경도는 시설 개략 위치"
+  ],
+  "sources": [
+    {
+      "id": "heritage-gyeongbok",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-gbg.do?grpCode=gbg"
+    },
+    {
+      "id": "heritage-changdeok",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-cdg.do?grpCode=cdg"
+    },
+    {
+      "id": "heritage-changgyeong",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-cgg.do?grpCode=cgg"
+    },
+    {
+      "id": "heritage-deoksu",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-dsg.do?grpCode=dsg"
+    },
+    {
+      "id": "heritage-jongmyo",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-jms.do?grpCode=jms"
+    },
+    {
+      "id": "heritage-taereung",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/R707000000.do?schGroupCode=rtm&ilIdx=20231030071509440413"
+    },
+    {
+      "id": "heritage-jeongneung",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/R707000000.do?schGroupCode=rtm&ilIdx=20231030071553868441"
+    },
+    {
+      "id": "heritage-uireung",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/R707000000.do?schGroupCode=rtm&ilIdx=20231030071706038310"
+    },
+    {
+      "id": "heritage-seonjeong",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/R707000000.do?schGroupCode=rtm&ilIdx=20231030071910158476"
+    },
+    {
+      "id": "heritage-heonin",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/R707000000.do?schGroupCode=rtm&ilIdx=20231030071959373297"
+    },
+    {
+      "id": "heritage-yeonsan",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/R707000000.do?schGroupCode=rtm&ilIdx=20231214144905632069"
+    },
+    {
+      "id": "heritage-yeonghwi",
+      "url": "https://royal.khs.go.kr/ROYAL/contents/R707000000.do?schGroupCode=rtm&ilIdx=20240125135913681741"
+    },
+    {
+      "id": "museum-gogung",
+      "url": "https://www.gogung.go.kr/gogung/main/contents.do?menuNo=800011"
+    },
+    {
+      "id": "museum-much",
+      "url": "https://m.much.go.kr/MUCH/contents/M01040100000.do"
+    },
+    {
+      "id": "museum-folk",
+      "url": "https://www.nfm.go.kr/home/subIndex/1239.do"
+    },
+    {
+      "id": "annex-gyeonghui",
+      "url": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_20/annex_20_01.jsp"
+    },
+    {
+      "id": "annex-gyeonggyo",
+      "url": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_21/annex_21_01.jsp"
+    },
+    {
+      "id": "annex-baekin",
+      "url": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_22/annex_22_01.jsp"
+    },
+    {
+      "id": "annex-dongdaemun",
+      "url": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_18/annex_18_01.jsp"
+    },
+    {
+      "id": "annex-donuimun",
+      "url": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_donuimoon/annex_donuimoon_01.jsp"
+    },
+    {
+      "id": "annex-gongpyeong",
+      "url": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_gongpyeong/annex_gongpyeong_01.jsp"
+    },
+    {
+      "id": "annex-gungisi",
+      "url": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_gun/annex_gun_01.jsp"
+    },
+    {
+      "id": "annex-dilkusha",
+      "url": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_dilkusha/annex_dilkusha_01.jsp"
+    },
+    {
+      "id": "annex-urisori",
+      "url": "https://museum.seoul.go.kr/www/intro/annexIntro/sekm/sekm1.jsp"
+    },
+    {
+      "id": "annex-insa",
+      "url": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_insadosi/annex_insadosi_01.jsp"
+    },
+    {
+      "id": "sema-west",
+      "url": "https://sema.seoul.go.kr/kr/visit/seoseoul"
+    },
+    {
+      "id": "sema-archive",
+      "url": "https://sema.seoul.go.kr/kr/visit/art_archive"
+    },
+    {
+      "id": "sema-photo",
+      "url": "https://sema.seoul.go.kr/kr/visit/photosema"
+    },
+    {
+      "id": "sema-south",
+      "url": "https://sema.seoul.go.kr/kr/visit/namseoul"
+    },
+    {
+      "id": "sema-nanji",
+      "url": "https://sema.seoul.go.kr/kr/visit/nanji_residency"
+    },
+    {
+      "id": "sema-paik",
+      "url": "https://sema.seoul.go.kr/kr/visit/nam_june_paik_house"
+    },
+    {
+      "id": "museum-hangeul",
+      "url": "https://www.hangeul.go.kr/"
+    }
+  ]
+}
