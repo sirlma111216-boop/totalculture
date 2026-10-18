@@ -37,7 +37,7 @@ const annexes=[
 ['dilkusha','딜쿠샤',37.5711,126.9621,'서울 종로구 사직로2길 17','070-4126-8853','annex_dilkusha/annex_dilkusha_01.jsp','앨버트 테일러의 집과 근현대사를 살펴보는 무료 전시관. 자유관람과 해설은 별도이며 단체는 방문 한 달 전~1주 전 전화 문의하세요. 해설은 서울시 공공서비스예약에서 신청합니다. 별도 주차장이 없습니다.'],
 ['urisori','서울우리소리박물관',37.5772,126.9897,'서울 종로구 율곡로 96','02-742-2600','sekm/sekm1.jsp','향토민요 등 우리 소리를 듣고 지역의 생활문화를 살펴보는 무료 박물관. 학교 단체 청음 동선·교육·해설은 방문 전에 문의하세요. 월요일 휴관이며 별도 주차장은 없습니다.'],
 ['insa','인사도시유적전시관',37.5717,126.9853,'서울 종로구 종로11길 18 G1서울 지하 1층','02-724-9710','annex_insadosi/annex_insadosi_01.jsp','도심 발굴유적을 현장에서 살펴보는 무료 전시관. 자유관람과 서울시 공공서비스예약을 통한 해설 신청을 구분하세요. 월요일 휴관이며 별도 주차장이 없습니다.']];
-for(const [id,name,lat,lng,address,phone,path,description] of annexes)add('annex-'+id,name,lat,lng,address,phone,annex+path,description,{price:0,tags:['공공기관','상설전시','역사','서울역사박물관 분관'],...(id==='gyeonggyo'||id==='donuimun'?{status:'closed',statusCheckedAt:checkedAt,statusEvidence:'기관 공식 관람안내의 임시휴관 공지 확인'}:{})});
+for(const [id,name,lat,lng,address,phone,path,description] of annexes)add('annex-'+id,name,lat,lng,address,phone,annex+path,description,{price:0,tags:['공공기관','상설전시','역사','서울역사박물관 분관'],...(id==='gyeonggyo'||id==='donuimun'?{status:'closed',closureUntil:id==='gyeonggyo'?'2026-12-12':'2026-12-31',statusCheckedAt:checkedAt,statusEvidence:'기관 공식 관람안내의 임시휴관 공지 확인'}:{})});
 for(const [id,name,lat,lng,address,phone,path,description] of [
 ['west','서울시립 서서울미술관',37.4567,126.896,'서울 금천구 시흥대로79길 65','02-2124-5800','seoseoul','뉴미디어·융복합 예술과 청소년 미술교육을 다루는 미술관. 일반 관람 무료이며 학교 연계 교육과 전시 관람은 별도 신청 조건을 확인하세요.'],
 ['archive','서울시립 미술아카이브',37.6102,126.973,'서울 종로구 평창문화로 101','02-2124-7400','art_archive','한국 현대미술 기록과 전시·도서를 만나는 공간. 일반 관람 무료, 특별전은 유료일 수 있습니다. 단체 교육·자료 열람·리서치랩은 각각의 절차를 확인하세요.'],
