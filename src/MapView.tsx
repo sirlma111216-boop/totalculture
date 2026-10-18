@@ -8,7 +8,7 @@ import type {Place,School} from './types';
 function Controls({school,radius,picking,onPick,revision}:{school:School;radius:number;picking:boolean;onPick:(lat:number,lng:number)=>void;revision:number}){
  const map=useMap();
  useEffect(()=>{map.fitBounds(L.latLng(school.lat,school.lng).toBounds(radius*2000),{padding:[40,40],maxZoom:14});},[map,school.lat,school.lng,radius,revision]);
- useEffect(()=>{const t=setTimeout(()=>map.invalidateSize(),100);return()=>clearTimeout(t);},[map]);
+ useEffect(()=>{const observer=new ResizeObserver(()=>map.invalidateSize());observer.observe(map.getContainer());map.invalidateSize();return()=>observer.disconnect();},[map]);
  useMapEvents({click(e){if(picking)onPick(e.latlng.lat,e.latlng.lng);}});return null;
 }
 const schoolIcon=L.divIcon({className:'school-marker',html:'<span>⌂</span>',iconSize:[44,44],iconAnchor:[22,22]});
