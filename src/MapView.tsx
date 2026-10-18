@@ -13,9 +13,11 @@ function Controls({school,radius,picking,onPick,revision}:{school:School;radius:
 }
 const EMPTY_ROUTE:Place[]=[];
 const schoolIcon=L.divIcon({className:'school-marker',html:'<span>⌖</span>',iconSize:[44,44],iconAnchor:[22,22]});
-export default function MapView({places,school,radius,selected,onSelect,picking,onPick,revision=0,route=EMPTY_ROUTE}:{places:Place[];school:School;radius:number;selected?:string;onSelect:(p:Place)=>void;picking:boolean;onPick:(lat:number,lng:number)=>void;revision?:number;route?:Place[]}){
+export default function MapView({places,school,radius,selected,onSelect,picking,onPick,revision=0,route=EMPTY_ROUTE,scopeKey=''}:{places:Place[];school:School;radius:number;selected?:string;onSelect:(p:Place)=>void;picking:boolean;onPick:(lat:number,lng:number)=>void;revision?:number;route?:Place[];scopeKey?:string}){
  const [clusterPlaces,setClusterPlaces]=useState<Place[]|null>(null);const [query,setQuery]=useState('');
- useEffect(()=>{setClusterPlaces(null);setQuery('');},[places,picking]);
+ // Preserve the selected cluster during background API updates.
+ // Dismiss only when the user changes the search context.
+ useEffect(()=>{setClusterPlaces(null);setQuery('');},[scopeKey,picking,school.lat,school.lng,radius,revision]);
  const openCluster=useCallback((items:Place[])=>{setClusterPlaces(items);setQuery('');},[]);
  const rows=clusterPlaces?.filter(p=>`${p.name} ${p.tags.join(' ')} ${categories.find(c=>c.id===p.category)?.label}`.toLowerCase().includes(query.toLowerCase()))||[];
  return <><MapContainer center={[school.lat,school.lng]} zoom={12} zoomControl={false} className={picking?'picking':''}>
