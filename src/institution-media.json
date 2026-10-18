@@ -98,5 +98,20 @@
     "name": "서울랜드",
     "url": "https://seoulland.co.kr/inc/images/main/img_logo_header2.svg",
     "source": "https://seoulland.co.kr"
+  },
+  "craftmuseum.seoul.go.kr": {
+    "name": "서울공예박물관",
+    "url": "https://craftmuseum.seoul.go.kr/images/common/img_footer_logo2.png",
+    "source": "https://craftmuseum.seoul.go.kr/"
+  },
+  "private-leeum": {
+    "name": "리움미술관",
+    "url": "https://www.leeumhoam.org/img/index/leeum-index-logo.svg",
+    "source": "https://www.leeumhoam.org/"
+  },
+  "private-hoam": {
+    "name": "호암미술관",
+    "url": "https://www.leeumhoam.org/img/index/hoam-index-logo.svg",
+    "source": "https://www.leeumhoam.org/"
   }
 }
