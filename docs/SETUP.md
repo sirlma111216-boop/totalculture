@@ -31,3 +31,15 @@ Cloudflare Git integration에 `sirlma111216-boop/totalculture`가 연결됩니�
 ## 백업 파일
 
 정보 관리 또는 데이터와 설정 → 전체 백업. JSON 파일에는 장소·보관함·일정 ID와 학교 기준점이 포함됩니다. 현재 브라우저의 개인 정보이므로 본인이 보관하세요. 백업 병합은 ID가 같은 시설을 가져온 내용으로 갱신하고 기존의 다른 시설은 유지합니다.
+
+## 앱 안 대중교통 안내 (ODsay Web)
+
+1. https://lab.odsay.com/ 에서 회원가입 후 Application → 애플리케이션 등록.
+2. 앱 이름: 학교밖 아틀라스. 사용 유형·호출 한도는 실제 운영 규모에 맞게 선택.
+3. 서비스 플랫폼은 **Web / URI**. 서비스 URI에 `https://totalculture.pages.dev` 등록. 등록 UI가 스킴 없이 요구하면 `totalculture.pages.dev` 입력. Server IP 키가 아닙니다.
+4. Web용 키 원문을 Cloudflare totalculture → Settings → Variables and Secrets → Production에 `ODSAY_WEB_API_KEY`로 등록하고 재배포.
+5. 장소 상세 → 기준 위치에서 교통안내. 실제 경로·버스 번호·환승·시간 수신 확인.
+
+이 키는 브라우저에서 ODsay를 직접 호출하는 **도메인 제한 Web 키**로, `/api/transit-config`를 통해 브라우저에 전달됩니다. Cloudflare에 Secret으로 저장해도 브라우저에서 숨겨지는 서버 비밀키가 아닙니다. 서울시·KOPIS·카카오 서버 키는 여기에 넣지 않습니다. 허용 도메인과 호출 한도를 반드시 설정합니다. 서버 방식은 고정 송신 IP가 필요하므로 현재 구성에서는 사용하지 않습니다. 참조: https://lab.odsay.com/community/boardView?seq=716
+
+경로는 사용자가 교통안내를 펼칠 때만 조회하며 방향·좌표 변경 시 이전 요청을 취소합니다. 지하철/버스/도보 순서, 승하차, 정거장, 환승 횟수, 예상 시간·일반 요금을 표시합니다. 날짜 지정 운행 검색 및 실시간 도착정보가 아니며, 키 등록 전 실제 경로 검증은 미완료입니다.
